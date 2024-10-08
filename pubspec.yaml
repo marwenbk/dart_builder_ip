@@ -1,7 +1,9 @@
 name: dart_builder_ip
-description: A starting point for Dart libraries or applications.
+description: >- 
+  Simplifies connecting Flutter apps to local emulators (e.g., Firebase Emulators) 
+  by providing a build-time constant with the builder's IP address.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/olostan/dart_builder_ip
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
