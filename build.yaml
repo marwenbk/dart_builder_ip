@@ -1,0 +1,15 @@
+builders:
+  builder_ip:
+    import: "package:dart_builder_ip/dart_builder_ip.dart"
+    builder_factories: ["builderIPBuilder"]
+    build_extensions: {".dart": [".builder-ip.dart"]}
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen|combining_builder"]
+
+targets:
+  $default:
+    builders:
+      dart_builder_ip|builder_ip:
+        generate_for:
+          - example/dart_builder_ip_example.dart
